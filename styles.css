@@ -111,6 +111,7 @@ ul { list-style: disc inside; }
 .team-list { display: flex; gap: 2rem; }
 .team-member {
   background: #fff;
+  color: #031a33;
   padding: 1rem;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.07);
