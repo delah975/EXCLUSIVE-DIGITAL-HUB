@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>NEXTGEN by DANCUN</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- Animate.css for easy animations -->
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <!-- Google Fonts Example -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:700,400&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -16,6 +14,7 @@
     <nav>
       <a href="#about">About</a>
       <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
       <a href="#team">Team</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -28,8 +27,7 @@
       <a href="#contact" class="cta-btn">Contact Us</a>
     </div>
     <div class="hero-image">
-      <!-- Use a high-res illustration or 3D render of a building with tech people -->
-      <img src="building-tech-illustration.png" alt="Massive Building with Tech Professionals">
+      <img src="images/building.jpg" alt="Massive Building">
     </div>
   </section>
 
@@ -49,22 +47,39 @@
     </ul>
   </section>
 
+  <section id="gallery">
+    <h2>Our Gallery</h2>
+    <div class="gallery-grid">
+      <img src="images/image1.jpg" alt="Tech Team at Work">
+      <img src="images/image2.jpg" alt="Modern Office">
+      <img src="images/image3.jpg" alt="Innovation">
+      <img src="images/image4.jpg" alt="Conference">
+      <img src="images/image5.jpg" alt="Massive Building">
+    </div>
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+      <span class="close">&times;</span>
+      <img class="lightbox-content" id="lightbox-img" src="" alt="">
+      <span class="prev">&#10094;</span>
+      <span class="next">&#10095;</span>
+    </div>
+  </section>
+
   <section id="team">
     <h2>Our Team</h2>
     <div class="team-list">
       <div class="team-member animate__animated animate__fadeInUp">
-        <img src="dancun-photo.jpg" alt="Dancun - Technology Solutions Engineer">
+        <img src="images/dancun.jpg" alt="Dancun - Technology Solutions Engineer">
         <h3>Dancun</h3>
         <p>Technology Solutions Engineer, Founder</p>
       </div>
-      <!-- Add more team members as needed -->
       <div class="team-member animate__animated animate__fadeInUp">
-        <img src="tech-guy1.jpg" alt="Tech Professional">
+        <img src="images/tech-team1.jpg" alt="Tech Professional">
         <h3>Jane Doe</h3>
         <p>Lead Developer</p>
       </div>
       <div class="team-member animate__animated animate__fadeInUp">
-        <img src="tech-guy2.jpg" alt="Tech Professional">
+        <img src="images/tech-team2.jpg" alt="Cloud Specialist">
         <h3>John Smith</h3>
         <p>Cloud Specialist</p>
       </div>
@@ -79,7 +94,6 @@
       <li><strong>Email:</strong> <a href="mailto:delahyy@gmail.com">delahyy@gmail.com</a></li>
     </ul>
     <form>
-      <!-- Simple contact form (optional, can link to email or backend) -->
       <input type="text" placeholder="Your Name" required>
       <input type="email" placeholder="Your Email" required>
       <textarea placeholder="Your Message" required></textarea>
@@ -90,5 +104,6 @@
   <footer>
     &copy; 2025 NEXTGEN by DANCUN. All rights reserved.
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
