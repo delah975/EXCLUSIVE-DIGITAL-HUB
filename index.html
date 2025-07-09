@@ -3,107 +3,131 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NEXTGEN by DANCUN</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:700,400&display=swap" rel="stylesheet">
+  <title>Gearlux Spare Parts</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0d1117;
+      color: #f0f0f0;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1571607388261-9991dfaa4c94') no-repeat center center/cover;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+    header img.logo {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 1rem;
+      filter: drop-shadow(2px 2px 4px black);
+    }
+    header h1 {
+      font-size: 4rem;
+      text-shadow: 2px 2px 5px #000;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: #00aaff;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: #161b22;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 0 10px #0003;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      height: 160px;
+      object-fit: cover;
+    }
+    .card h3 {
+      text-align: center;
+      margin-top: 0.8rem;
+    }
+    footer {
+      background: #010409;
+      text-align: center;
+      padding: 2rem;
+      color: #888;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <div class="logo">NEXTGEN <span>by DANCUN</span></div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#team">Team</a>
-      <a href="#contact">Contact</a>
-    </nav>
+
+  <header data-aos="fade-in">
+    <img src="https://img.icons8.com/ios-filled/100/metallic/gear.png" alt="Gearlux Logo" class="logo" />
+    <h1>Gearlux Spare Parts</h1>
   </header>
-  
-  <section id="hero" class="animate__animated animate__fadeIn">
-    <div class="hero-content">
-      <h1>Building the Future of Technology</h1>
-      <p>Your partner in innovative tech solutions.</p>
-      <a href="#contact" class="cta-btn">Contact Us</a>
-    </div>
-    <div class="hero-image">
-      <img src="images/building.jpg" alt="Massive Building">
-    </div>
+
+  <section data-aos="fade-up">
+    <h2 class="section-title">About Us</h2>
+    <p>
+      At Gearlux, we provide top-quality car spare parts to keep your vehicle running smoothly. We ensure durability, performance, and affordability in every product.
+    </p>
   </section>
 
-  <section id="about">
-    <h2>About NEXTGEN by DANCUN</h2>
-    <p>We are a team of passionate technology solutions engineers dedicated to transforming businesses with robust, innovative technology. Founded by Dancun, a seasoned Technology Solutions Engineer, NEXTGEN delivers real solutions for a digital world.</p>
-  </section>
-
-  <section id="services">
-    <h2>What We Do</h2>
-    <ul>
-      <li>Custom Software Development</li>
-      <li>IT Consulting & Solutions</li>
-      <li>Cloud Integration</li>
-      <li>Cybersecurity Services</li>
-      <li>Technical Support & Maintenance</li>
-    </ul>
-  </section>
-
-  <section id="gallery">
-    <h2>Our Gallery</h2>
-    <div class="gallery-grid">
-      <img src="images/image1.jpg" alt="Tech Team at Work">
-      <img src="images/image2.jpg" alt="Modern Office">
-      <img src="images/image3.jpg" alt="Innovation">
-      <img src="images/image4.jpg" alt="Conference">
-      <img src="images/image5.jpg" alt="Massive Building">
-    </div>
-    <!-- Lightbox Modal -->
-    <div id="lightbox" class="lightbox">
-      <span class="close">&times;</span>
-      <img class="lightbox-content" id="lightbox-img" src="" alt="">
-      <span class="prev">&#10094;</span>
-      <span class="next">&#10095;</span>
+  <section data-aos="fade-up">
+    <h2 class="section-title">Our Spare Parts</h2>
+    <div class="grid">
+      <!-- 20 spare part cards (same as before) -->
+      <div class="card"><img src="https://source.unsplash.com/featured/?car-engine" alt=""><h3>Engine Block</h3></div>
+      <div class="card"><img src="https://source.unsplash.com/featured/?brake-pad" alt=""><h3>Brake Pads</h3></div>
+      <div class="card"><img src="https://source.unsplash.com/featured/?car-battery" alt=""><h3>Car Battery</h3></div>
+      <div class="card"><img src="https://source.unsplash.com/featured/?alternator" alt=""><h3>Alternator</h3></div>
+      <div class="card"><img src="https://source.unsplash.com/featured/?spark-plug" alt=""><h3>Spark Plugs</h3></div>
+      <div class="card"><img src="https://source.unsplash.com/featured/?radiator" alt=""><h3>Radiator</h3></div>
+      <div class="card"><img src="https://source.unsplash.com/featured/?shock-absorber" alt=""><h3>Shock Absorbers</h3></div>
+      <div class="card"><img src="https://source.unsplash.com/featured/?oil-filter" alt=""><h3>Oil Filter</h3></div>
+      <div class="card"><img src="https://source.unsplash.com/featured/?timing-belt" alt=""><h3>Timing Belt</h3></div>
+      <div class="card"><img src="https://source.unsplash.com/featured/?clutch-kit" alt=""><h3>Clutch Kit</h3></div>
+      <div class="card"><img src="https://source.unsplash.com/featured/?drive-shaft" alt=""><h3>Drive Shaft</h3></div>
+      <div class="card"><img src="https://source.unsplash.com/featured/?fuel-pump" alt=""><h3>Fuel Pump</h3></div>
+      <div class="card"><img src="https://source.unsplash.com/featured/?headlight" alt=""><h3>Headlights</h3></div>
+      <div class="card"><img src="https://source.unsplash.com/featured/?tail-light" alt=""><h3>Tail Lights</h3></div>
+      <div class="card"><img src="https://source.unsplash.com/featured/?wheel-hub" alt=""><h3>Wheel Hub</h3></div>
+      <div class="card"><img src="https://source.unsplash.com/featured/?air-filter" alt=""><h3>Air Filter</h3></div>
+      <div class="card"><img src="https://source.unsplash.com/featured/?control-arm" alt=""><h3>Control Arms</h3></div>
+      <div class="card"><img src="https://source.unsplash.com/featured/?car-mirror" alt=""><h3>Side Mirrors</h3></div>
+      <div class="card"><img src="https://source.unsplash.com/featured/?car-bumper" alt=""><h3>Bumper</h3></div>
+      <div class="card"><img src="https://source.unsplash.com/featured/?starter-motor" alt=""><h3>Starter Motor</h3></div>
     </div>
   </section>
 
-  <section id="team">
-    <h2>Our Team</h2>
-    <div class="team-list">
-      <div class="team-member animate__animated animate__fadeInUp">
-        <img src="images/dancun.jpg" alt="Dancun - Technology Solutions Engineer">
-        <h3>Dancun</h3>
-        <p>Technology Solutions Engineer, Founder</p>
-      </div>
-      <div class="team-member animate__animated animate__fadeInUp">
-        <img src="images/tech-team1.jpg" alt="Tech Professional">
-        <h3>Jane Doe</h3>
-        <p>Lead Developer</p>
-      </div>
-      <div class="team-member animate__animated animate__fadeInUp">
-        <img src="images/tech-team2.jpg" alt="Cloud Specialist">
-        <h3>John Smith</h3>
-        <p>Cloud Specialist</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Ready to transform your business? Reach out today!</p>
-    <ul>
-      <li><strong>Phone:</strong> <a href="tel:0729089668">0729089668</a></li>
-      <li><strong>Email:</strong> <a href="mailto:delahyy@gmail.com">delahyy@gmail.com</a></li>
-    </ul>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+  <section data-aos="fade-up">
+    <h2 class="section-title">Contact Us</h2>
+    <p>📞 +254 712 345678 | ✉️ support@gearlux.co.ke</p>
+    <p>📍 Nairobi, Kenya</p>
   </section>
 
   <footer>
-    &copy; 2025 NEXTGEN by DANCUN. All rights reserved.
+    © 2025 Gearlux Spare Parts. All rights reserved.
   </footer>
-  <script src="script.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
-</html>
+        </html>
